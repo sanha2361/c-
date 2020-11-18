@@ -2,7 +2,7 @@
 #define CIRCLE_H_INCLUDED
 #include <iostream>
 #include <cmath>
-
+using namespace std;
 
 const double PI = 3.14;
 
