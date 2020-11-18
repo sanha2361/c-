@@ -13,11 +13,15 @@ public:
       name = new char[strlen(n)+1];
       strcpy(name,n);
     }
+    Copycat(const Copycat &cc){
+      name = new char[strlen(cc.name)+1];
+      strcpy(name,cc.name);
+    }
     ~Copycat(){
         delete [] name;
     }
     void whoRU() const {
-        cout << "나는" << name << "입니다" <<endl;
+        cout << "I am " << name  <<endl;
     }
 };
 
